@@ -20,6 +20,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import modelo.otros;
 
 /**
  *
@@ -39,7 +40,8 @@ public class autorizacion extends javax.swing.JFrame {
      cedula.addKeyListener(ca);
      contraseña.addKeyListener(ca);
 
-
+     otros o = new otros();
+     o.sistema_operativo();
 
     }
 

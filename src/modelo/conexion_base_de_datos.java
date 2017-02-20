@@ -108,8 +108,9 @@ return nueva_ip;
  //UNEFA CAGUA MARACAY
 
      if(this.getDireccion().equalsIgnoreCase("localhost")){//se conecta en modo local
+            System.out.println("cargando direccion local");
             url = "jdbc:mysql://localhost"; //personal
-            conexion = DriverManager.getConnection(url,"root","clave");//conexion normal superusuario
+            conexion = DriverManager.getConnection(url,"root","---");//conexion normal superusuario
           }else{//se conecta en modo remoto
 
             url="jdbc:mysql://"+this.getDireccion(); //control de estudio cagua
